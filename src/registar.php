@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registar</title>
 </head>
 <body>
     <h1>Akime Hotel</h1>
     <div>
-        <h2>Entrar na sua Conta </h2>
+        <h2>Criar Conta</h2>
         <form action="">
+            <label for="nome">Nome Completo</label>
+            <input type="text" placeholder="Seu Nome" id="nome" required>
+            <br>
+
             <label for="email">Email</label>
             <input type="email" placeholder="email@exemplo.com" id="email" required>
             <br>
@@ -18,10 +22,14 @@
             <input type="password" placeholder="********" id="password" required>
             <br>
 
-            <button type="submit">Entrar</button>
+            <label for="confirmar">Confirmar Password</label>
+            <input type="password" placeholder="********" id="confirmar" required>
             <br>
 
-            <span>Não tens conta aqui? <a href="./registar.php">Regista-te aqui</a></span>
+            <button type="submit">Registar</button>
+            <br>
+
+            <span>Já tens conta aqui? <a href="./login.php">Entra na sua Conta</a></span>
         </form>
     </div>
 </body>
