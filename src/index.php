@@ -12,7 +12,6 @@
     <header>
         <ul>
             <li>Página Inicial</li>
-            <li>Sobre Nós</li>
             <li>Registar</li>
             <li>Login</li>
         </ul>
