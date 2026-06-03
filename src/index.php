@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <div>
+        <h1>Akime Hotel</h1>
+    </div>
+    <header>
+        <ul>
+            <li>Página Inicial</li>
+            <li>Sobre Nós</li>
+            <li>Registar</li>
+            <li>Login</li>
+        </ul>
+    </header>
+    <div>
+        <h2>Bem-vindo ao Akime Hotel</h2>
+        <p>Sinta-se em casa, aqui é um lugar de puro conforto e prazer</p>
+        <button type="submit">Reservar agora</button>
+    </div>
+    <h3>Tipos de Quartos</h3>
+    <div>
+        <h4>Quarto Único</h4>
+        <span>A partir de <? ?>€
+            <br>
+            Capacidade <? ?>
+        </span>
+    </div>
+    <div>
+        <h4>Quarto Duplo</h4>
+        <span>A partir de <? ?>€
+            <br>
+            Capacidade <? ?>
+        </span>
+    </div>
+    <div>
+        <h4>Quarto Casal</h4>
+        <span>A partir de <? ?>€
+            <br>
+            Capacidade <? ?>
+        </span>
+    </div>
+    <div>
+        <h4>Quarto Familiar</h4>
+        <span>A partir de <? ?>€
+            <br>
+            Capacidade <? ?>
+        </span>
+    </div>
+</body>
+</html>
