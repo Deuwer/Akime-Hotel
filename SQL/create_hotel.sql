@@ -35,7 +35,9 @@ pag_tipo ENUM('Parcial','Total')
 CREATE TABLE Funcionario (
 func_id INT PRIMARY KEY AUTO_INCREMENT,
 func_nome VARCHAR(80) NOT NULL,
-func_funcao VARCHAR(50) NOT NULL
+func_funcao VARCHAR(50) NOT NULL,
+func_email VARCHAR(70),
+fun_password VARCHAR(80)
 );
 
 CREATE TABLE Pagamento_Reserva (
