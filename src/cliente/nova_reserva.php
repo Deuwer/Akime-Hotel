@@ -8,7 +8,7 @@
 <body>
     <h2>Nova Reserva</h2>
 
-    <form action="">
+    <form id="reserva_form">
      <label for="quarto">Tipo de Quarto</label>
      <select name="" id="quarto" required>
         <option value="Único">Único</option>
@@ -34,6 +34,7 @@
      <input type="text" id="nif" pattern="[0-9]{9}">
      <br>
 
+     <p> Preço Total: <span id="preco_total"></span></p>
      <button type="submit">Concluir a reserva</button>
 
     </form>
