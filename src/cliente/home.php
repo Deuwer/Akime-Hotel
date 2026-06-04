@@ -15,8 +15,10 @@ if (!isset($_SESSION["host_id"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Cliente</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
+    <div id="pagina">
     <header class="menu">
     <div class="logo">
         <h2>Akime Hotel</h2>
@@ -32,16 +34,17 @@ if (!isset($_SESSION["host_id"])) {
     </nav>
     </header>
 
-    <div>
-        <div>
+    <main class="conteudo">
+        <div class="caixa">
             <h3>Nova Reserva</h3>
         </div>
-    </div>
+</main>
 
-    <div>
-        <div>
+    <main class="conteudo">
+        <div class="caixa">
             <h3>Minhas Reservas</h3>
         </div>
+</main>
     </div>
 </body>
 </html>

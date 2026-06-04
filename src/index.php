@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="pagina">
     <header class="menu">
 
     <div class="logo">
@@ -23,11 +25,19 @@
 
 </header>
 
-    <div>
-        <h2>Bem-vindo ao Akime Hotel</h2>
-        <p>Sinta-se em casa, aqui é um lugar de puro conforto e prazer</p>
-        <a href="registar.php">Reservar agora</a>
-    </div>
-    
+    <main class="conteudo">
+
+        <div class="caixa">
+            <h1>Bem-vindo ao Akime Hotel</h1>
+            <p>Sinta-se em casa, aqui é um lugar de puro conforto e prazer</p>
+        </div>
+
+        <div class="caixa">
+            <h2>Serviços</h2>
+            <p>Quartos individuais, duplos e familiares.</p>
+        </div>
+
+    </main>
+</div>
 </body>
 </html>

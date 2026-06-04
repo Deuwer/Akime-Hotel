@@ -15,9 +15,10 @@ if (!isset($_SESSION["host_id"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Reservas</title>
     <script src="../js/minhas_reservas.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-
+    <div id="pagina">
     <header class="menu">
     <div class="logo">
         <h2>Akime Hotel</h2>
@@ -34,8 +35,8 @@ if (!isset($_SESSION["host_id"])) {
     </header> 
 
     <h2>As minhas Reservas</h2>
-
-    <div>
+    <main class="conteudo">
+    <div class="caixa">
         <table>
             <thead>
                 <tr>
@@ -49,6 +50,8 @@ if (!isset($_SESSION["host_id"])) {
             <tbody id="tabela_reservas">
             </tbody>
         </table>
+    </div>
+    </main>
     </div>
 </body>
 </html>

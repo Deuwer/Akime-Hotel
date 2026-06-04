@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home do Administrador</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
+    <div id="pagina">
     <header class="menu">
 
     <div class="logo">
@@ -25,5 +27,9 @@
     </nav>
 
 </header>
+
+<main class="conteudo">
+    <h1>Bem-vindo Administrador</h1>
+</main>
 </body>
 </html>

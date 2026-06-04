@@ -25,9 +25,11 @@ $reserva = $stmt->fetch(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>Editar Reserva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-
+<div id="pagina">
 <header class="menu">
     <div class="logo">
         <h2>Akime Hotel</h2>
@@ -44,7 +46,8 @@ $reserva = $stmt->fetch(PDO::FETCH_ASSOC);
     </header>
 
 <h1>Editar Reserva</h1>
-
+<main class="conteudo">
+    <div class="caixa">
 <form action="" method="POST">
 
     <input type="hidden" name="res_id" value="<?php echo $reserva["res_id"]; ?>">
@@ -68,6 +71,8 @@ $reserva = $stmt->fetch(PDO::FETCH_ASSOC);
 <br>
 
 <a href="minhas_reservas.php"> Voltar </a>
-
+    </div>
+</main>
+</div>
 </body>
 </html>

@@ -20,10 +20,12 @@ $reservas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-
+<div id="pagina">
 <header class="menu">
 
     <div class="logo">
@@ -44,7 +46,8 @@ $reservas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </header>
 
 <h2>Reservas</h2>
-
+<main class="conteudo">
+    <div class="caixa">
 <table>
     <thead>
         <tr>
@@ -88,8 +91,8 @@ $reservas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </table>
 
 <br>
-
-<a href="admin_home.php">Voltar</a>
-
+</div>
+</main>
+</div>
 </body>
 </html>

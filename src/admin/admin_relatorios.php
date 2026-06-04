@@ -32,10 +32,12 @@ $receita = $stmt->fetch(PDO::FETCH_ASSOC);
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatórios</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-
+<div id="pagina">
 <header class="menu">
 
     <div class="logo">
@@ -56,7 +58,8 @@ $receita = $stmt->fetch(PDO::FETCH_ASSOC);
 </header>
 
 <h2>Relatórios</h2>
-
+<main class="conteudo">
+<div class="caixa">
 <table>
     <tr>
         <th>Indicador</th>
@@ -86,7 +89,9 @@ $receita = $stmt->fetch(PDO::FETCH_ASSOC);
 
 <br>
 
-<a href="admin_home.php">Voltar</a>
 
+</div>
+</main>
+</div>
 </body>
 </html>

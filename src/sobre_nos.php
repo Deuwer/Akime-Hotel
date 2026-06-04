@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="pagina">
     <header class="menu">
 
     <div class="logo">
@@ -23,7 +25,8 @@
 
 </header>
 
-    <section>
+    <main class="conteudo">
+        <div class="caixa">
 
     <h1>Sobre Nós</h1>
 
@@ -33,6 +36,8 @@
         atendimento personalizado e um processo simples de reserva.
     </p>
 
-</section>
+        </div>
+    </main>
+    </div>
 </body>
 </html>

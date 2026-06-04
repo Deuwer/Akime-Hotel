@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="pagina">
     <h1>Akime Hotel</h1>
+
+    <main class="conteudo">
     <div>
         <h2>Entrar na sua Conta </h2>
         <form action="atividades/login_processo.php" method="POST" id="login">
@@ -23,6 +27,8 @@
 
             <span>Não tens conta aqui? <a href="./registar.php">Regista-te aqui</a></span>
         </form>
+    </div>
+    </main>
     </div>
 </body>
 </html>

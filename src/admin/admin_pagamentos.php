@@ -20,10 +20,12 @@ $pagamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamentos</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-    
+    <div id="pagina">
     <header class="menu">
 
     <div class="logo">
@@ -44,7 +46,8 @@ $pagamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </header>
 
 <h2>Registar Pagamento</h2>
-
+<main class="conteudo">
+    <div class="caixa">
 <form action="../atividades/registar_pagamentos.php" method="POST">
 
     <label>ID da Reserva</label>
@@ -99,8 +102,10 @@ $pagamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </table>
 
 <br>
+    </div>
+</main>
+    </div>
 
-<a href="admin_home.php">Voltar</a>
 
 </body>
 </html>

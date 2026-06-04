@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registar</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="pagina">
     <h1>Akime Hotel</h1>
-    <div>
+    <main class="conteudo">
+    <div class="caixa">
         <h2>Criar Conta</h2>
         <form action="atividades/registar_processo.php" method="POST" id="registo">
             <label for="nome">Nome Completo</label>
@@ -40,6 +43,8 @@
 
             <span>Já tens conta aqui? <a href="./login.php">Entra na sua Conta</a></span>
         </form>
+    </div>
+</main>
     </div>
 </body>
 </html>

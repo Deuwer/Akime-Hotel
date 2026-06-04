@@ -15,9 +15,10 @@ if (!isset($_SESSION["host_id"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Reserva</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-    
+    <div id="pagina">
     <header class="menu">
     <div class="logo">
         <h2>Akime Hotel</h2>
@@ -35,6 +36,8 @@ if (!isset($_SESSION["host_id"])) {
 
     <h2>Nova Reserva</h2>
 
+    <main class="conteudo">
+        <div class="caixa">
     <form action="../atividades/reserva_processo.php" method="POST" id="reserva_form">
      <label for="quarto">Tipo de Quarto</label>
      <select name="quarto" id="quarto" required>
@@ -54,6 +57,8 @@ if (!isset($_SESSION["host_id"])) {
      <button type="submit">Concluir a reserva</button>
 
     </form>
-
+        </div>
+    </main>
+    </div>
 </body>
 </html>
