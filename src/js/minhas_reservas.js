@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async() => {
 
 async function listarReservas() {
 
-    let resposta = await fetch("");
+    let resposta = await fetch("../atividades/lista_reservas.php");
 
     let reservas = await resposta.json();
 
