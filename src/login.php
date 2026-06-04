@@ -8,10 +8,10 @@
 </head>
 <body>
     <div id="pagina">
+        <main class="conteudo">
     <h1>Akime Hotel</h1>
 
-    <main class="conteudo">
-    <div>
+    <div class="caixa">
         <h2>Entrar na sua Conta </h2>
         <form action="atividades/login_processo.php" method="POST" id="login">
             <label for="email">Email</label>

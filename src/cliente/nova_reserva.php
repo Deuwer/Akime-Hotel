@@ -34,9 +34,10 @@ if (!isset($_SESSION["host_id"])) {
     </nav>
     </header>
 
+    <main class="conteudo">
     <h2>Nova Reserva</h2>
 
-    <main class="conteudo">
+    
         <div class="caixa">
     <form action="../atividades/reserva_processo.php" method="POST" id="reserva_form">
      <label for="quarto">Tipo de Quarto</label>

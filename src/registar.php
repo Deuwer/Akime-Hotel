@@ -8,8 +8,9 @@
 </head>
 <body>
     <div id="pagina">
+        <main class="conteudo">
     <h1>Akime Hotel</h1>
-    <main class="conteudo">
+    
     <div class="caixa">
         <h2>Criar Conta</h2>
         <form action="atividades/registar_processo.php" method="POST" id="registo">
@@ -40,6 +41,8 @@
                 <option value="Outros">Outros</option>
             </select>
             <br>
+
+            <button type="submit">Registar</button>
 
             <span>Já tens conta aqui? <a href="./login.php">Entra na sua Conta</a></span>
         </form>

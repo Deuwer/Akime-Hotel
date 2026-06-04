@@ -41,8 +41,9 @@ $hospedes = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </nav>
 </header>
 
-<h2>Hóspedes</h2>
 <main class="conteudo">
+<h2>Hóspedes</h2>
+
     <div class="caixa">
 <table>
     <tr>

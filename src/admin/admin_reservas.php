@@ -45,8 +45,9 @@ $reservas = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </nav>
 </header>
 
-<h2>Reservas</h2>
 <main class="conteudo">
+<h2>Reservas</h2>
+
     <div class="caixa">
 <table>
     <thead>

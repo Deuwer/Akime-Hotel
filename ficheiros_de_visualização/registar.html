@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registar</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="pagina">
     <h1>Akime Hotel</h1>
-    <div>
+    <main class="conteudo">
+    <div class="caixa">
         <h2>Criar Conta</h2>
-        <form action="">
+        <form action="atividades/registar_processo.php" method="POST" id="registo">
             <label for="nome">Nome Completo</label>
-            <input type="text" placeholder="Seu Nome" id="nome" required>
+            <input type="text" placeholder="Seu Nome" id="nome" name="nome" required>
             <br>
 
             <label for="email">Email</label>
-            <input type="email" placeholder="email@exemplo.com" id="email" required>
+            <input type="email" placeholder="email@exemplo.com" id="email" name="email" required>
             <br>
 
             <label for="password">Password</label>
-            <input type="password" placeholder="********" id="password" required>
+            <input type="password" placeholder="********" id="password" name="password" required>
             <br>
 
             <label for="confirmar">Confirmar Password</label>
-            <input type="password" placeholder="********" id="confirmar" required>
+            <input type="password" placeholder="********" id="confirmar" name="confirmar" required>
             <br>
 
             <label for="nif">NIF</label>
@@ -38,11 +41,10 @@
             </select>
             <br>
 
-            <button type="submit">Registar</button>
-            <br>
-
-            <span>Já tens conta aqui? <a href="./login.html">Entra na sua Conta</a></span>
+            <span>Já tens conta aqui? <a href="./login.php">Entra na sua Conta</a></span>
         </form>
+    </div>
+</main>
     </div>
 </body>
 </html>

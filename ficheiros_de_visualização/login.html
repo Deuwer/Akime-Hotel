@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <div id="pagina">
+        <main class="conteudo">
     <h1>Akime Hotel</h1>
-    <div>
-        <h2>Entra na sua Conta </h2>
-        <form action="../src/atividades/login_processo.php" method="POST" id="login">
+
+    <div class="caixa">
+        <h2>Entrar na sua Conta </h2>
+        <form action="atividades/login_processo.php" method="POST" id="login">
             <label for="email">Email</label>
-            <input type="email" placeholder="email@exemplo.com" id="email" required>
+            <input type="email" placeholder="email@exemplo.com" id="email" name="email" required>
             <br>
+
             <label for="password">Password</label>
-            <input type="password" placeholder="********" id="password" required>
+            <input type="password" placeholder="********" id="password" name="password" required>
             <br>
 
             <button type="submit">Entrar</button>
             <br>
-            <span>Não tens conta aqui? <a href="registar.html">Regista-te aqui</a></span>
+
+            <span>Não tens conta aqui? <a href="./registar.php">Regista-te aqui</a></span>
         </form>
+    </div>
+    </main>
     </div>
 </body>
 </html>

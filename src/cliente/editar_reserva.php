@@ -44,9 +44,10 @@ $reserva = $stmt->fetch(PDO::FETCH_ASSOC);
         </ul>
     </nav>
     </header>
-
-<h1>Editar Reserva</h1>
+    
 <main class="conteudo">
+<h1>Editar Reserva</h1>
+
     <div class="caixa">
 <form action="" method="POST">
 

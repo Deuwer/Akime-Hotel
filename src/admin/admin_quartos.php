@@ -41,8 +41,8 @@ $quartos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </nav>
 </header>
 
-<h2>Quartos</h2>
 <main class="conteudo">
+<h2>Quartos</h2>
     <div class="caixa">
 <table>
     <thead>

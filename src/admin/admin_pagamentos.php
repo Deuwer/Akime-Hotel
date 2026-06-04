@@ -45,8 +45,9 @@ $pagamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </nav>
 </header>
 
-<h2>Registar Pagamento</h2>
 <main class="conteudo">
+<h2>Registar Pagamento</h2>
+
     <div class="caixa">
 <form action="../atividades/registar_pagamentos.php" method="POST">
 

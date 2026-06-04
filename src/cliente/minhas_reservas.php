@@ -34,8 +34,9 @@ if (!isset($_SESSION["host_id"])) {
     </nav>
     </header> 
 
-    <h2>As minhas Reservas</h2>
     <main class="conteudo">
+    <h2>As minhas Reservas</h2>
+    
     <div class="caixa">
         <table>
             <thead>

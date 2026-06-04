@@ -57,8 +57,9 @@ $receita = $stmt->fetch(PDO::FETCH_ASSOC);
     </nav>
 </header>
 
-<h2>Relatórios</h2>
 <main class="conteudo">
+<h2>Relatórios</h2>
+
 <div class="caixa">
 <table>
     <tr>
