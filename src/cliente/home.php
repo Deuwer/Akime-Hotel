@@ -17,8 +17,9 @@ if (!isset($_SESSION["host_id"])) {
     <title>Home Cliente</title>
 </head>
 <body>
-    <div>
-        <h1>Akime Hotel</h1>
+    <header class="menu">
+    <div class="logo">
+        <h2>Akime Hotel</h2>
     </div>
 
     <nav>
@@ -29,6 +30,7 @@ if (!isset($_SESSION["host_id"])) {
             <li><a href="../atividades/logout.php">Terminar sessão</a></li>
         </ul>
     </nav>
+    </header>
 
     <div>
         <div>

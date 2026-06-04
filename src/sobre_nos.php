@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Sobre nós</title>
 </head>
 <body>
     <header class="menu">
@@ -23,11 +23,16 @@
 
 </header>
 
-    <div>
-        <h2>Bem-vindo ao Akime Hotel</h2>
-        <p>Sinta-se em casa, aqui é um lugar de puro conforto e prazer</p>
-        <a href="registar.php">Reservar agora</a>
-    </div>
-    
+    <section>
+
+    <h1>Sobre Nós</h1>
+
+    <p>
+        O Akime Hotel é uma unidade hoteleira dedicada ao conforto
+        e bem-estar dos seus hóspedes, oferecendo quartos modernos,
+        atendimento personalizado e um processo simples de reserva.
+    </p>
+
+</section>
 </body>
 </html>
