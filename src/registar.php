@@ -26,7 +26,16 @@
             <input type="password" placeholder="********" id="confirmar" name="confirmar" required>
             <br>
 
-            <button type="submit">Registar</button>
+            <label for="nif">NIF</label>
+            <input type="text" id="nif" name="nif" pattern="[0-9]{9}">
+            <br>
+
+            <label for="doc">Documento</label>
+            <select name="doc" id="doc">
+                <option value="Cartão de Cidadão">Cartão de Cidadão</option>
+                <option value="Passaporte">Passaporte</option>
+                <option value="Outros">Outros</option>
+            </select>
             <br>
 
             <span>Já tens conta aqui? <a href="./login.php">Entra na sua Conta</a></span>
