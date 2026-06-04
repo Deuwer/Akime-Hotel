@@ -27,3 +27,47 @@ $stmt->execute();
 $receita = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatórios</title>
+</head>
+<body>
+
+<h2>Relatórios</h2>
+
+<table>
+    <tr>
+        <th>Indicador</th>
+        <th>Valor</th>
+    </tr>
+
+    <tr>
+        <td>Total de reservas</td>
+        <td><?php echo $total_reservas["total_reservas"]; ?></td>
+    </tr>
+
+    <tr>
+        <td>Reservas canceladas</td>
+        <td><?php echo $reservas_canceladas["reservas_canceladas"]; ?></td>
+    </tr>
+
+    <tr>
+        <td>Check-ins feitos</td>
+        <td><?php echo $checkins["checkins"]; ?></td>
+    </tr>
+
+    <tr>
+        <td>Total faturado</td>
+        <td><?php echo $receita["total_receita"]; ?> €</td>
+    </tr>
+</table>
+
+<br>
+
+<a href="admin_home.php">Voltar</a>
+
+</body>
+</html>
