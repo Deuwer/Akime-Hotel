@@ -9,21 +9,21 @@
     <h1>Akime Hotel</h1>
     <div>
         <h2>Criar Conta</h2>
-        <form id="registo">
+        <form action="atividades/registar_processo.php" method="POST" id="registo">
             <label for="nome">Nome Completo</label>
-            <input type="text" placeholder="Seu Nome" id="nome" required>
+            <input type="text" placeholder="Seu Nome" id="nome" name="nome" required>
             <br>
 
             <label for="email">Email</label>
-            <input type="email" placeholder="email@exemplo.com" id="email" required>
+            <input type="email" placeholder="email@exemplo.com" id="email" name="email" required>
             <br>
 
             <label for="password">Password</label>
-            <input type="password" placeholder="********" id="password" required>
+            <input type="password" placeholder="********" id="password" name="password" required>
             <br>
 
             <label for="confirmar">Confirmar Password</label>
-            <input type="password" placeholder="********" id="confirmar" required>
+            <input type="password" placeholder="********" id="confirmar" name="confirmar" required>
             <br>
 
             <button type="submit">Registar</button>
