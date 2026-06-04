@@ -36,6 +36,25 @@ $receita = $stmt->fetch(PDO::FETCH_ASSOC);
 </head>
 <body>
 
+<header class="menu">
+
+    <div class="logo">
+        <h2>Akime Hotel</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="admin_home.php">Página Inicial</a></li>
+            <li><a href="admin_reservas.php">Reservas</a></li>
+            <li><a href="admin_hospedes.php">Hóspedes</a></li>
+            <li><a href="admin_quartos.php">Quartos</a></li>
+            <li><a href="admin_pagamentos.php">Pagamentos</a></li>
+            <li><a href="admin_relatorios.php">Relatórios</a></li>
+            <li><a href="../atividades/logout.php">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
 <h2>Relatórios</h2>
 
 <table>
