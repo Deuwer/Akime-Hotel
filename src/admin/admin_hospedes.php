@@ -62,11 +62,11 @@ $hospedes = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><?php echo $hospede["host_id"]; ?></td>
             <td><?php echo $hospede["host_nome"]; ?></td>
             <td><?php echo $hospede["host_email"]; ?></td>
-            <td><?php echo $hospede["host_documento"]; ?></td>
-            <td><?php echo $hospede["host_nif"]; ?></td>
+            <td><?php echo $hospede["host_doc"]; ?></td>
+            <td><?php echo $hospede["host_NIF"]; ?></td>
             <td><?php echo $hospede["host_estado"]; ?></td>
             <td>
-               <a href="../atividades/inativar_hospede.php?id=<?php echo $hospede["host_id"]; ?>">
+               <a href="../atividades/inativo_hospede.php?id=<?php echo $hospede["host_id"]; ?>">
                  Inativar
                </a>
             </td>

@@ -1,6 +1,6 @@
 <?php
 
-require_once "../src/config/database.php";
+require_once "../config/database.php";
 
 $name = trim($_POST["nome"]);
 $email = trim($_POST["email"]);
@@ -44,7 +44,7 @@ VALUES (?, ?, ?, ?, ?, ?)";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$name, $documento, $nif, $estado, $email, $password_hash]);
 
-header("Location:../login.php");
+header("Location:../cliente/home.php");
 exit;
 
 
