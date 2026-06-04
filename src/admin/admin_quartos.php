@@ -60,11 +60,12 @@ $quartos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <tbody>
         <tr>
             <td><?php echo $quarto["quarto_id"]; ?></td>
-            <td><?php echo $quarto["quarto_numero"]; ?></td>
             <td><?php echo $quarto["quarto_tipo"]; ?></td>
-            <td><?php echo $quarto["quarto_capacidade"]; ?></td>
+            <td><?php echo $quarto["quarto_quant"]; ?></td>
             <td><?php echo $quarto["quarto_estado"]; ?></td>
-            <td><?php echo $quarto["quarto_preco"]; ?> €</td>
+            <td><?php echo $quarto["quarto_descricao"]; ?></td>
+            <td><?php echo $quarto["quarto_valor_base"]; ?></td>
+            <td><?php echo $quarto["quarto_custo_peq_almoco"]; ?> €</td>
         </tr>
     </tbody>
     <?php } ?>

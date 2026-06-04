@@ -6,7 +6,8 @@ require_once "../config/database.php";
 $reserva_id = $_POST["reserva_id"];
 $montante = $_POST["montante"];
 $tipo = $_POST["tipo"];
-$data = date("Y-m-d");
+$data = date("Y-m-d H:i:s");
+
 
 $sql = "INSERT INTO Pagamento (pag_res_id, pag_montante, pag_tipo, pag_data) VALUES (?, ?, ?, ?)";
 

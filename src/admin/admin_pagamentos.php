@@ -3,10 +3,12 @@
 session_start();
 require_once "../config/database.php";
 
-$sql = "SELECT Pagamento.*, Reserva.res_id, Hospede.host_nome
-        FROM Pagamento, Reserva, Hospede 
-        WHERE Pagamento.pag_res_id = Reserva.res_id 
-        AND Reserva.res_host_id = Hospede.host_id 
+$sql = "SELECT Pagamento.*, Reserva.res_id, Hospede.host_nome, Funcionario.func_nome
+        FROM Pagamento
+        INNER JOIN Pagamento_Reserva ON Pagamento.pag_id = Pagamento_Reserva.pag_res_pag_id
+        INNER JOIN Reserva ON Pagamento_Reserva.pag_res_res_id = Reserva.res_id
+        INNER JOIN Hospede ON Reserva.res_host_id = Hospede.host_id
+        INNER JOIN Funcionario ON Pagamento.pag_func_id = Funcionario.func_id
         ORDER BY Pagamento.pag_data DESC";
 
 $stmt = $pdo->prepare($sql);
