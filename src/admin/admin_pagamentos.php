@@ -1,3 +1,21 @@
+<?php
+
+session_start();
+require_once "../config/database.php";
+
+$sql = "SELECT Pagamento.*, Reserva.res_id, Hospede.host_nome
+        FROM Pagamento, Reserva, Hospede
+        WHERE Pagamento.pag_res_id = Reserva.res_id
+        AND Reserva.res_host_id = Hospede.host_id
+        ORDER BY Pagamento.pag_data DESC";
+
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+
+$pagamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
