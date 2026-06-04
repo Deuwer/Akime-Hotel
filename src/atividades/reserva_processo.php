@@ -28,3 +28,27 @@ if ($data_inicio >= $data_fim) {
     exit();
 }
 
+$sql = "SELECT quarto_id 
+        FROM Quarto 
+        WHERE quarto_tipo = ?
+        LIMIT 1";
+
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$tipo_quarto]);
+
+$quarto = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$quarto) {
+    header("Location: ../cliente/nova_reserva.php?erro=quarto");
+    exit();
+}
+
+$sql = "INSERT INTO Reserva 
+        (res_host_id, res_quarto_id, res_inicio, res_fim)
+        VALUES (?, ?, ?, ?)";
+
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$host_id,$quarto["quarto_id"],$data_inicio,$data_fim]);
+
+header("Location: ../cliente/minhas_reservas.php?sucesso=reserva_criada");
+exit();
