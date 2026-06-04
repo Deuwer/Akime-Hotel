@@ -26,7 +26,28 @@ if ($host && password_verify($password, $host["host_password"])) {
     header("Location: ../cliente/home.php");
     exit();
 
-} else {
+} 
+
+$sql = "SELECT * FROM Funcionario WHERE func_email = ? LIMIT 1";
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$email]);
+
+$funcionario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if ($funcionario) {
+
+    if ($password == $funcionario["fun_password"]) {
+
+        $_SESSION["func_id"] = $funcionario["func_id"];
+        $_SESSION["func_nome"] = $funcionario["func_nome"];
+        $_SESSION["func_email"] = $funcionario["func_email"];
+
+        header("Location: ../admin/admin_home.php");
+        exit();
+    }
+}
+
+else {
     header("Location: ../login.php?erro=login");
     exit();
 }
