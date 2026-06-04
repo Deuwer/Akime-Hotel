@@ -32,11 +32,11 @@ if (!isset($_SESSION["host_id"])) {
         <table>
             <thead>
                 <tr>
-                    <th>Check-in</th>
-                    <th>Check-out</th>
-                    <th>Tipo de Quarto</th>
-                    <th>Total a pagar</th>
-                    <th>Editar</th>
+                    <th>ID</th>
+                    <th>Data Início</th>
+                    <th>Data Fim</th>
+                    <th>Estado</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody id="tabela_reservas">
