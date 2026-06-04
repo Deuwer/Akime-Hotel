@@ -16,3 +16,61 @@ $reservas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservas</title>
+</head>
+<body>
+
+<h2>Reservas</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Tipo</th>
+            <th>Data início</th>
+            <th>Data fim</th>
+            <th>Estado</th>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <?php foreach ($reservas as $reserva) { ?>
+
+            <tr>
+                <td><?php echo $reserva["res_id"]; ?></td>
+                <td><?php echo $reserva["host_nome"]; ?></td>
+                <td><?php echo $reserva["quarto_tipo"]; ?></td>
+                <td><?php echo $reserva["res_inicio"]; ?></td>
+                <td><?php echo $reserva["res_fim"]; ?></td>
+                <td><?php echo $reserva["res_estado"]; ?></td>
+                <td><?php echo $reserva["res_check_in"]; ?></td>
+                <td><?php echo $reserva["res_check_out"]; ?></td>
+                <td>
+                    <a href="../atividades/check_in_reserva.php?id=<?php echo $reserva["res_id"]; ?>">
+                        Check-in
+                    </a>
+
+                    <a href="../atividades/check_out_reserva.php?id=<?php echo $reserva["res_id"]; ?>">
+                        Check-out
+                    </a>
+                </td>
+            </tr>
+
+        <?php } ?>
+    </tbody>
+</table>
+
+<br>
+
+<a href="admin_home.php">Voltar</a>
+
+</body>
+</html>
