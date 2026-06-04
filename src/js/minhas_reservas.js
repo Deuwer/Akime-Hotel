@@ -30,7 +30,7 @@ async function listarReservas() {
                 <td>${reserva.res_fim}</td>
                 <td>${reserva.res_estado ?? ""}</td>
                 <td>
-                    <a href="editar_reserva.html?id=${reserva.res_id}">
+                    <a href="editar_reserva.php?id=${reserva.res_id}">
                         Editar
                     </a>
                     <a href="../atividades/cancelar_reserva.php?id=${reserva.res_id}">
