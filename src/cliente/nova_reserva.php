@@ -28,31 +28,20 @@ if (!isset($_SESSION["host_id"])) {
 
     <h2>Nova Reserva</h2>
 
-    <form id="reserva_form">
+    <form action="../atividades/reserva_processo.php" method="POST" id="reserva_form">
      <label for="quarto">Tipo de Quarto</label>
-     <select name="" id="quarto" required>
+     <select name="quarto" id="quarto" required>
         <option value="Único">Único</option>
         <option value="Duplo">Duplo</option>
         <option value="Casal">Casal</option>
         <option value="Família">Família</option>
      </select>
 
-     <label for="quantidade">Quartos</label>
-     <input type="number" step="1" id="quantidade" required>
-
-     <label for="hospedes">Hóspedes</label>
-     <input type="number" step="1" id="hospedes" required>
-     <br>
-
      <label for="data_inicio">Data de início</label>
-     <input type="date" id="data_inicio" required>
+     <input type="date" id="data_inicio" name="data_inicio" required>
 
      <label for="data_fim">Data do fim</label>
-     <input type="date" id="data_fim" required>
-
-     <label for="nif">NIF</label>
-     <input type="text" id="nif" pattern="[0-9]{9}">
-     <br>
+     <input type="date" id="data_fim" name="data_fim" required>
 
      <p> Preço Total: <span id="preco_total"></span></p>
      <button type="submit">Concluir a reserva</button>

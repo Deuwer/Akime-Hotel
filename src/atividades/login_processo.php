@@ -17,7 +17,7 @@ $stmt->execute([$email]);
 
 $host = $stmt->fetch(PDO::FETCH_ASSOC);
 
-if ($host && password_verify($host, $host["host_password"])) {
+if ($host && password_verify($password, $host["host_password"])) {
 
     $_SESSION["host_id"] = $host["host_id"];
     $_SESSION["host_nome"] = $host["host_nome"];
