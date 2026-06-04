@@ -8,6 +8,12 @@ async function listarReservas() {
 
     let tabela = document.getElementById("tabela_reservas");
 
+    const estadosReserva = new Map();
+
+    estadosReserva.set("Activa", "Reserva Ativa");
+    estadosReserva.set("Cancelada", "Reserva Cancelada");
+    estadosReserva.set(null, "Pendente");
+
     tabela.innerHTML = "";
 
     if (reservas.length == 0) {
@@ -23,12 +29,14 @@ async function listarReservas() {
 
     reservas.forEach((reserva) => {
 
+        let estado = estadosReserva.get(reserva.res_estado);
+
         tabela.innerHTML += `
             <tr>
                 <td>${reserva.res_id}</td>
                 <td>${reserva.res_inicio}</td>
                 <td>${reserva.res_fim}</td>
-                <td>${reserva.res_estado ?? ""}</td>
+                <td>${estado}</td>
                 <td>
                     <a href="editar_reserva.php?id=${reserva.res_id}">
                         Editar
