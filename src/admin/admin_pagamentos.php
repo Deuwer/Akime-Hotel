@@ -26,7 +26,7 @@ $pagamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <h2>Registar Pagamento</h2>
 
-<form action="" method="POST">
+<form action="../atividades/registar_pagamentos.php" method="POST">
 
     <label>ID da Reserva</label>
     <input type="number" name="reserva_id" required>
