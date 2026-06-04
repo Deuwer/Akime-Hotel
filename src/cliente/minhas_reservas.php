@@ -6,18 +6,6 @@ if (!isset($_SESSION["host_id"])) {
     header("Location: ../login.php");
     exit();
 }
-
-$host_id = $_SESSION["host_id"];
-$sql = "SELECT *
-        FROM Reserva
-        WHERE res_host_id = ?
-        ORDER BY res_inicio DESC";
-
-$stmt = $pdo->prepare($sql);
-$stmt->execute([$host_id]);
-
-$reservas = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +14,7 @@ $reservas = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Reservas</title>
+    <script src="../js/minhas_reservas.js"></script>
 </head>
 <body>
     <nav>
@@ -50,10 +39,7 @@ $reservas = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <th>Editar</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                </tr>
+            <tbody id="tabela_reservas">
             </tbody>
         </table>
     </div>
