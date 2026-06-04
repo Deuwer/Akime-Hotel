@@ -17,6 +17,12 @@ if (!isset($_SESSION["host_id"])) {
     <title>Nova Reserva</title>
 </head>
 <body>
+    
+    <header class="menu">
+    <div class="logo">
+        <h2>Akime Hotel</h2>
+    </div>
+
     <nav>
         <ul>
             <li><a href="home.php">Home</a></li>
@@ -25,6 +31,7 @@ if (!isset($_SESSION["host_id"])) {
             <li><a href="../atividades/logout.php">Terminar sessão</a></li>
         </ul>
     </nav>
+    </header>
 
     <h2>Nova Reserva</h2>
 
@@ -47,9 +54,6 @@ if (!isset($_SESSION["host_id"])) {
      <button type="submit">Concluir a reserva</button>
 
     </form>
-
-    <h3>Quartos Disponíveis</h3>
-    <div></div>
 
 </body>
 </html>

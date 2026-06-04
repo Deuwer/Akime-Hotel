@@ -28,6 +28,21 @@ $reserva = $stmt->fetch(PDO::FETCH_ASSOC);
 </head>
 <body>
 
+<header class="menu">
+    <div class="logo">
+        <h2>Akime Hotel</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="nova_reserva.php">Nova Reserva</a></li>
+            <li><a href="minhas_reservas.php">Minhas Reservas</a></li>
+            <li><a href="../atividades/logout.php">Terminar sessão</a></li>
+        </ul>
+    </nav>
+    </header>
+
 <h1>Editar Reserva</h1>
 
 <form action="" method="POST">

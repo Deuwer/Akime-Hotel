@@ -17,6 +17,12 @@ if (!isset($_SESSION["host_id"])) {
     <script src="../js/minhas_reservas.js"></script>
 </head>
 <body>
+
+    <header class="menu">
+    <div class="logo">
+        <h2>Akime Hotel</h2>
+    </div>
+
     <nav>
         <ul>
             <li><a href="home.php">Home</a></li>
@@ -25,8 +31,9 @@ if (!isset($_SESSION["host_id"])) {
             <li><a href="../atividades/logout.php">Terminar sessão</a></li>
         </ul>
     </nav>
+    </header> 
 
-    <h1>As minhas Reservas</h1>
+    <h2>As minhas Reservas</h2>
 
     <div>
         <table>
