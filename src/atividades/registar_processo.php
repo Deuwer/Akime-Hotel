@@ -1,6 +1,6 @@
 <?php
 
-require_once "./src/config/database.php";
+require_once "../src/config/database.php";
 
 $name = trim($_POST["nome"]);
 $email = trim($_POST["email"]);
