@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION["host_id"])) {
+    header("Location: ../login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -10,13 +21,14 @@
         <h1>Akime Hotel</h1>
     </div>
 
-    <header>
+    <nav>
         <ul>
-            <li>Home</li>
-            <li>Nova Reserva</li>
-            <li>Minhas Reservas</li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="nova_reserva.php">Nova Reserva</a></li>
+            <li><a href="minhas_reservas.php">Minhas Reservas</a></li>
+            <li><a href="../atividades/logout.php">Terminar sessão</a></li>
         </ul>
-    </header>
+    </nav>
 
     <div>
         <div>

@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION["host_id"])) {
+    header("Location: ../login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -6,6 +17,15 @@
     <title>Minhas Reservas</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="nova_reserva.php">Nova Reserva</a></li>
+            <li><a href="minhas_reservas.php">Minhas Reservas</a></li>
+            <li><a href="../atividades/logout.php">Terminar sessão</a></li>
+        </ul>
+    </nav>
+
     <h1>As minhas Reservas</h1>
 
     <div>
