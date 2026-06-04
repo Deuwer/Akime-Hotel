@@ -3,9 +3,7 @@
 session_start();
 require_once "../config/database.php";
 
-$sql = "SELECT *
-        FROM Hospede
-        ORDER BY host_nome ASC";
+$sql = "SELECT * FROM Hospede ORDER BY host_nome ASC";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
@@ -33,6 +31,7 @@ $hospedes = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <th>Documento</th>
         <th>NIF</th>
         <th>Estado</th>
+        <th>Inativar</th>
     </tr>
 
     <?php foreach ($hospedes as $hospede) { ?>
@@ -44,6 +43,11 @@ $hospedes = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><?php echo $hospede["host_documento"]; ?></td>
             <td><?php echo $hospede["host_nif"]; ?></td>
             <td><?php echo $hospede["host_estado"]; ?></td>
+            <td>
+               <a href="../atividades/inativar_hospede.php?id=<?php echo $hospede["host_id"]; ?>">
+                 Inativar
+               </a>
+            </td>
         </tr>
 
     <?php } ?>
