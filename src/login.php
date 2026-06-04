@@ -9,7 +9,7 @@
     <h1>Akime Hotel</h1>
     <div>
         <h2>Entrar na sua Conta </h2>
-        <form id="login">
+        <form action="atividades/login_processo.php" method="POST" id="login">
             <label for="email">Email</label>
             <input type="email" placeholder="email@exemplo.com" id="email" name="email" required>
             <br>
